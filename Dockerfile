@@ -7,3 +7,8 @@ RUN apt-get install -y software-properties-common && \
 	apt-get install -y python-pip ansible && \
 	pip install softlayer && \
 	adduser --disabled-password --gecos '' ansible
+
+COPY hosts/softlayer.py /etc/ansible/hosts
+ 
+RUN chmod +x /etc/ansible/hosts
+
