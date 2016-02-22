@@ -1,9 +1,9 @@
-# Docker image for running ansible configuration
-FROM ubuntu:14.04
+FROM ubuntu:latest
 
 RUN apt-get install -y software-properties-common && \
 	apt-add-repository ppa:ansible/ansible && \
 	apt-get update && \
+	apt-get upgrade -y && \
 	apt-get install -y python-pip ansible && \
 	pip install softlayer && \
 	pip install docker-py && \
