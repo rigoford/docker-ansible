@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:15.10
 
 RUN apt-get install -y software-properties-common && \
 	apt-add-repository ppa:ansible/ansible && \
