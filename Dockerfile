@@ -9,7 +9,10 @@ RUN apt-get install -y software-properties-common && \
 	pip install pysphere && \
 	adduser --disabled-password --gecos '' ansible
 
+COPY hosts/*.py /etc/ansible/
 COPY hosts/softlayer.py /etc/ansible/hosts
- 
-RUN chmod +x /etc/ansible/hosts
+
+RUN chmod +x /etc/ansible/*.py && \
+    chmod +x /etc/ansible/hosts
+    
 
