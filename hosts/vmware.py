@@ -103,18 +103,6 @@ if __name__ == '__main__':
             # Handle target environment that doesn't support HTTPS verification
             ssl._create_default_https_context = _create_unverified_https_context
 
-    if args.server:
-        server_fqdn = args.server
-
-    if args.username:
-        server_username = args.username
-
-    if args.password:
-        server_password = args.password
-    else:
-        import getpass
-        server_password = getpass.getpass()
-
     if (server_fqdn, server_username, server_password):
 
         if args.list:
