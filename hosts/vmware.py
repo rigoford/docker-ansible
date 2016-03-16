@@ -79,9 +79,9 @@ def grouplist():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--server', help='fqdn of vsphere server',
-            action='store', required='True')
+            action='store')
     parser.add_argument('-u', '--username', help='your vsphere username',
-            action='store', required='True')
+            action='store')
     parser.add_argument('-p', '--password', help='your vsphere password',
             action='store')
     parser.add_argument('-l', '--list', help='List all guest VMs', 
