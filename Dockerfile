@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 
-RUN apt-get install -y software-properties-common && \
-	apt-add-repository ppa:ansible/ansible && \
+RUN apt-get update && \
+    apt-get install -y software-properties-common 
+
+RUN apt-add-repository ppa:ansible/ansible && \
 	apt-get update && \
 	apt-get install -y python-pip ansible && \
 	pip install softlayer && \
