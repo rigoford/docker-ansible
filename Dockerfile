@@ -5,7 +5,7 @@ RUN apt-get update && \
 
 RUN apt-add-repository ppa:ansible/ansible && \
 	apt-get update && \
-	apt-get install -y python-pip ansible && \
+	apt-get install -y python-pip ansible curl && \
 	pip install softlayer && \
 	pip install docker-py && \
 	pip install pysphere && \
