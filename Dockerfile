@@ -8,7 +8,7 @@ RUN apt-add-repository ppa:ansible/ansible && \
 	apt-get install -y python-pip ansible curl groovy && \
 	pip install softlayer && \
 	pip install docker-py && \
-	pip install pysphere && \
+	pip install pyvmomi && \
 	adduser --disabled-password --gecos '' ansible
 
 COPY hosts/*.py /etc/ansible/
