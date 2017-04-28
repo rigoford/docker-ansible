@@ -3,11 +3,11 @@ Preinstalled ansible on a docker container, ready to go... configured for softla
 
 # Usage
 
-To download the latest image
+To download the latest image:
 
     docker pull garethjevans/ansible:latest
 
-To run a playbook
+To run a playbook:
 
     docker run --rm -it \
         --name ansible \
@@ -17,7 +17,7 @@ To run a playbook
         -w="/home/ansible" \
         garethjevans/ansible:latest ansible-playbook playbooks/myplaybook.yml
 
-To run a playbook that uses the softlayer inventry
+To run a playbook that uses the softlayer inventry:
 
     docker run --rm -it \
         --name ansible \
