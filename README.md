@@ -17,7 +17,7 @@ To run a playbook:
         -w="/home/ansible" \
         garethjevans/ansible:latest ansible-playbook playbooks/myplaybook.yml
 
-To run a playbook that uses the softlayer inventry:
+To run a playbook that uses the softlayer inventory:
 
     docker run --rm -it \
         --name ansible \

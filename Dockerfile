@@ -9,6 +9,7 @@ RUN apt-add-repository ppa:ansible/ansible && \
 	pip install softlayer && \
 	pip install docker-py && \
 	pip install pyvmomi && \
+	pip install apache-libcloud && \
 	adduser --disabled-password --gecos '' ansible
 
 COPY hosts/*.py /etc/ansible/
